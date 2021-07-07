@@ -5,7 +5,7 @@
 
 # TODO
 
-_29 group website project_
+_29a group website project_
 
 This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
 
@@ -16,8 +16,9 @@ Site published at https://ginotas.github.io/1-todo/
 ## Project features
 
 - Github pages
+- Responsive design (grid)
 - localStorage
-- CRUD
+- CRUD (create, read, update, delete)
 
 
 ## Authors
