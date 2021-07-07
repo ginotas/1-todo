@@ -16,11 +16,9 @@ Site published at https://ginotas.github.io/1-todo/
 ## Project features
 
 - Github pages
-- multi-page (sign up, sign in, forgot password)
-- desktop only
-- absolute center
-- css blur
-- form
+- localStorage
+- CRUD
+
 
 ## Authors
 
