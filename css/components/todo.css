@@ -3,13 +3,15 @@
     gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     width: 100%;
+    /*
     align-items: start;
+    */
 }
 
 .list > .card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 10px;
     box-shadow: 0 4px 8px #0004;
     border: 4px solid #eee;
@@ -41,4 +43,5 @@
 .list > .card > .deadline {
     padding: 0 10px 10px 10px;
     font-style: italic;
+    margin-top: auto;
 }
