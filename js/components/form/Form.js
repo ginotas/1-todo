@@ -8,6 +8,8 @@ class Form {
         this.dateDOM = null;
         this.completedDOM = null;
         this.saveButtonDOM = null;
+
+        this.saveButtonCallback = null;
     }
 
     init() {
@@ -79,7 +81,7 @@ class Form {
             const completed = this.completedDOM.checked;
 
             if (this.isValidTask(message, color, date, completed)) {
-                console.log('task is valid...');
+                this.saveButtonCallback(message, color, date, completed);
             } else {
                 console.log('task is NOT valid...');
             }
@@ -97,8 +99,8 @@ class Form {
     }
 
     isValidMessage(message) {
-        if (typeof message !== "string" ||
-        message == "") {
+        if (typeof message !== 'string' ||
+            message === '') {
             return false;
         }
         return true;
@@ -109,16 +111,16 @@ class Form {
     }
 
     isValidDate(date) {
-        if (typeof date !== "string" ||
-        date == "" ||
-        isNaN((new Date(date)).getTime())) {
+        if (typeof date !== 'string' ||
+            date === '' ||
+            isNaN((new Date(date)).getTime())) {
             return false;
         }
         return true;
     }
 
     isValidCompleted(completed) {
-        return typeof completed === "boolean";
+        return typeof completed === 'boolean';
     }
 }
 
